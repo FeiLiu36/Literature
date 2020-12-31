@@ -1,6 +1,10 @@
 # [Title]
 
-111
+Markdown
+
+html
+
+图床
 
 ## Introduction
 
@@ -47,11 +51,38 @@ $$
 
 ---
 
+### CR-GAN
+
+[Consistency regularization for generative adversarial networks](https://arxiv.org/pdf/1910.12027.pdf)
+
+**[`ICLR 2020`]**	**(`Google`)**	**[[Code](https://github.com/NVlabs/stylegan)]**
+
+**[`Tero Karras`, `Samuli Laine`, `Timo Aila`]**
+
+<details><summary>Click to expand</summary><p>
+
+
+> **Summary**
+
+They propose a training stabilizer based on **consistency regularization**. In particular, they **augment data** passing into the GAN discriminator and **penalize the sensitivity** of the discriminator to these augmentations.
+
+> **Details**
+
+$T(x)$ donates a stochastic data augmentation function. $D(x)$ donates the last layer before the activation function. The proposed regularization is given by:
+$$
+\min_{D} L_{c r} = \min_{D} \|D(x)-D(T(x))\|^{2}
+$$
+</p></details>
+
+---
 
 
 
+$\theta$
 
-
+$$
+\theta
+$$
 
 
 
